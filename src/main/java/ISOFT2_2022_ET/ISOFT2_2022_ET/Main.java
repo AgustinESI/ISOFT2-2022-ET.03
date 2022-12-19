@@ -1,7 +1,5 @@
 package ISOFT2_2022_ET.ISOFT2_2022_ET;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import ISOFT2_2022_ET.ISOFT2_2022_ET.model.Cliente;
@@ -11,14 +9,13 @@ public class Main {
 	public static final Scanner TECLADO = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<Integer>();
 		Cliente c = new Cliente();
 		System.out.println("Introduzca su edad: ");
 		c.setEdad(leerEntero());
-		System.out.println("¿Estudias o trabajas? Indique 't' si estudia o 'f' si trabaja: ");
-		c.setEstudia(leerBooleanos());
-		System.out.println("¿Vive con sus padres o en su propia vivienda? Indique true si vive con sus padres o false en caso contrario: ");
-		c.setViveConSusPadres(leerBooleanos());
+		System.out.println("¿Estudias o trabajas? Indique 't' si trabaja o 'f' si estudia: ");
+		c.setEstudia_Trabaja(leerBooleanos());
+		System.out.println("¿Vive con sus padres o en su propia vivienda? Indique 't' si vive con sus padres o 'f' en caso contrario: ");
+		c.setViveSolo_VivePadres(leerBooleanos());
 		System.out.println(c.tipoDeCuenta());
 	}
 	
