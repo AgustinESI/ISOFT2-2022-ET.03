@@ -43,7 +43,7 @@ public class Cliente {
 
 
 	public String tipoDeCuenta() {
-		String cadena = null;
+		String cadena = "No existe ninguna coincidencia";
 		
 		if (getEdad() < 0) {
 			throw new NumerosValidosException("Numeros negativos no validos");
