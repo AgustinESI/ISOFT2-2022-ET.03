@@ -1,6 +1,6 @@
 package ISOFT2_2022_ET.ISOFT2_2022_ET.model;
 
-import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.NumerosValidosException;
+import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.*;
 
 public class Cliente {
 	int edad;
@@ -47,6 +47,14 @@ public class Cliente {
 		
 		if (getEdad() < 0) {
 			throw new NumerosValidosException("Numeros negativos no validos");
+		}
+		
+		if(getEdad() > 18 && !getEstudia_Trabaja() && (getViveSolo_VivePadres() || !getViveSolo_VivePadres())) {
+			throw new SinCuentaException("No tiene cuenta.");
+		}
+		
+		if(getEdad() < 18 && getEstudia_Trabaja() && (getViveSolo_VivePadres() || !getViveSolo_VivePadres())) {
+			throw new SinCuentaException("No tiene cuenta.");
 		}
 		
 		if (getEdad() < 18 && !getEstudia_Trabaja() && getViveSolo_VivePadres()) {
