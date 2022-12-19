@@ -49,14 +49,6 @@ public class Cliente {
 			throw new NumerosValidosException("Numeros negativos no validos");
 		}
 		
-		if(getEdad() > 18 && !getEstudia_Trabaja() && (getViveSolo_VivePadres() || !getViveSolo_VivePadres())) {
-			throw new SinCuentaException("No tiene cuenta.");
-		}
-		
-		if(getEdad() < 18 && getEstudia_Trabaja() && (getViveSolo_VivePadres() || !getViveSolo_VivePadres())) {
-			throw new SinCuentaException("No tiene cuenta.");
-		}
-		
 		if (getEdad() < 18 && !getEstudia_Trabaja() && getViveSolo_VivePadres()) {
 			cadena = "Cuenta Confort";
 		}
@@ -76,6 +68,18 @@ public class Cliente {
 			} else {
 				cadena = "Cuenta Bienvenido a la Vida Adulta";
 			}
+		}
+		
+		if(getEdad() > 18 && !getEstudia_Trabaja() && getViveSolo_VivePadres()) {
+			throw new SinCuentaException("No tiene cuenta.");
+		}
+		
+		if(getEdad() < 18 && getEstudia_Trabaja()) {
+			throw new SinCuentaException("No tiene cuenta.");
+		}
+		
+		if(getEdad() > 25 && !getEstudia_Trabaja()) {
+			throw new SinCuentaException("No tiene cuenta.");
 		}
 		
 		return cadena;

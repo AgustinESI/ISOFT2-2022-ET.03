@@ -116,7 +116,7 @@ public class ClienteTest {
 		cliente.setEstudia_Trabaja(true);
 		cliente.setViveSolo_VivePadres(false);
 		
-		assertEquals(cliente.tipoDeCuenta(), "uenta Bienvenido a la Vida Adulta");
+		assertEquals(cliente.tipoDeCuenta(), "Cuenta Bienvenido a la Vida Adulta");
 	}
 	
 	@Test()
