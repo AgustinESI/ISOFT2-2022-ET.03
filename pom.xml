@@ -4,13 +4,13 @@
 	<artifactId>ISOFT2-2022-ET.03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ISOFT2-2022-ET.03</name>
-	<description>Proyecto de pruebas para el segundo ejercicio</description>
+	<description>Proyecto de pruebas para el tercer ejercicio</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
 	<dependencies>
