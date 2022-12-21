@@ -5,8 +5,8 @@ import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.SinCuentaException;
 
 public class Cliente {
 	int edad;
-	boolean estudia_Trabaja;
-	boolean viveSolo_VivePadres;
+	boolean estudiaTrabaja;
+	boolean viveSoloVivePadres;
 	
 	public Cliente() {
 		super();
@@ -24,22 +24,22 @@ public class Cliente {
 
 
 	public boolean getEstudia_Trabaja() {
-		return estudia_Trabaja;
+		return estudiaTrabaja;
 	}
 
 
-	public void setEstudia_Trabaja(boolean estudia_Trabaja) {
-		this.estudia_Trabaja = estudia_Trabaja;
+	public void setEstudia_Trabaja(boolean estudiaTrabaja) {
+		this.estudiaTrabaja = estudiaTrabaja;
 	}
 
 
 	public boolean getViveSolo_VivePadres() {
-		return viveSolo_VivePadres;
+		return viveSoloVivePadres;
 	}
 
 
-	public void setViveSolo_VivePadres(boolean viveSolo_VivePadres) {
-		this.viveSolo_VivePadres = viveSolo_VivePadres;
+	public void setViveSolo_VivePadres(boolean viveSoloVivePadres) {
+		this.viveSoloVivePadres = viveSoloVivePadres;
 	}
 
 
