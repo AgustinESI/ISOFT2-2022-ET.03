@@ -1,6 +1,6 @@
 package ISOFT2_2022_ET.ISOFT2_2022_ET;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 

@@ -1,6 +1,7 @@
 package ISOFT2_2022_ET.ISOFT2_2022_ET.model;
 
-import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.*;
+import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.NumerosValidosException;
+import ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions.SinCuentaException;
 
 public class Cliente {
 	int edad;
