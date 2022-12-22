@@ -6,7 +6,7 @@ import ISOFT2_2022_ET.ISOFT2_2022_ET.model.Cliente;
 
 
 public class Main {
-	public static final Scanner TECLADO = new Scanner(System.in);
+	public static final Scanner TECLADO = new Scanner(System.in, "UTF8");
 	
 	public static void main(String[] args) {
 		Cliente c = new Cliente();
